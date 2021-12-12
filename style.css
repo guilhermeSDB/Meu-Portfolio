@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+
+ul li {
+  margin-left: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  color: #25282b;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.subtitle {
+  font-family: "Nunito", sans-serif;
+  color: #828282;
+}
+
+.amarelo {
+  background: #fdc435;
+}
+
+.amarelo-border {
+  border-bottom: 0.3rem solid#FDC435;
+}
+
+.amarelo-txt {
+  color: #fdc435;
+}
+
+.logo {
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+bg-background {
+  background: #f9faff;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+}
+
+img {
+  position: relative;
+  top: 0;
+  z-index: 0;
+  right: 0;
+}
+
+#project {
+  box-shadow: 0px 6px 64px 0px #7090b01a;
+  background: #ffffff;
+}
+
+:root {
+  --animate-delay: 1s;
+}
+
+.animate__slideInLeft {
+  --animate-duration: 2s;
+}
+
+.animate__fadeIn {
+  --animate-duration: 2s;
+}
+.animate__fadeInDown {
+  --animate-duration: 1.5s;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Barros</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito&family=Playfair+Display:wght@700&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="w-screen h-full bg-background px-10 lg:px-40">
+        <nav class="flex justify-between font-semibold py-8 animate__animated animate__fadeInDown">
+            <a class="logo" href="#">Guilherme S</a>
+            <ul class="hidden lg:flex">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <a class="lg:hidden" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg></a>
+        </nav>
+
+
+        <section class="grid grid-cols-1 py-20 lg:py-32">
+            <div class="py-10 my-auto">
+                <h5 class="text-lg font-normal amarelo-txt py-2 animate__animated animate__slideInLeft">
+                    Frontend
+                    Developer</h5>
+                <h1
+                    class="text-3xl title lg:text-6xl py-2 min-w-screen lg:max-w-xl animate__animated animate__slideInLeft">
+                    Olá, meu
+                    nome é
+                    Guilherme
+                    Barros
+                </h1>
+                <p
+                    class="text-1xl subtitle lg:text-2xl py-2 max-w-none lg:max-w-md animate__animated animate__slideInLeft">
+                    Desenvolvedor
+                    Frontend
+                    Junior,
+                    estudante de Sistemas para Internet
+                    e Freelancer no tempo livre.</p>
+                <div class="my-5 animate__animated animate__fadeInDown">
+                    <button
+                        class="mr-2 text-black font-semibold text-sm py-2 px-6 lg:px-10 rounded-lg border-2 border-yellow-300 hover:bg-white amarelo">Projetos</button>
+                    <button
+                        class="text-black font-semibold text-sm py-2 px-6 lg:px-10 rounded-lg border-2 border-black hover:text-white hover:bg-black">Linkedin</button>
+                </div>
+            </div>
+
+            <div id="img_perfil" class="hidden lg:flex lg:justify-end">
+                <img class="w-2/5 absolute animate__animated animate__fadeIn" src="src/images/figma file.png" alt="">
+            </div>
+        </section>
+
+
+
+
+        <section class="w-full lg:px-56 ">
+            <h1 id="projects" class="title text-center mb-24 pb-6 amarelo-border text-4xl lg:text-5xl ">Projetos</h1>
+
+
+            <div id="project" class="grid my-8 lg:grid-cols-2 lg:h-96">
+                <div class="p-6 lg:m-auto lg:w-96">
+                    <h3 class="title" style="font-size:40px">Netflix Clone</h3>
+                    <p class="subtitle my-6" style="font-size:18px">
+                        Clone da página inicial da Netflix desenvolvido para Testar minhas habilidades, utilizando
+                        HTML semântico, além de flexbox e media queries para um design responsivo.
+                    </p>
+                    <button onclick="window.location.href='https://guilhermesdb.github.io/Netflix_clone/';"
+                        class=" rounded-full border-2 border-black py-2 px-10 text-center hover:transition-all hover:text-white hover:bg-black duration-500 ease-in-out">View
+                        Project</button>
+                </div>
+                <img class="h-full object-cover object-left-top order-first rounded-tl-2xl rounded-tr-2xl lg:order-last lg:rounded-tl-none lg:rounded-tr-3xl lg:rounded-br-3xl"
+                    src="src/images/Netflix_clone.png" alt="">
+            </div>
+
+
+            <div id="project" class="grid my-8 lg:grid-cols-2 lg:h-96">
+                <img class="h-full object-cover object-left-top order-first rounded-tl-2xl rounded-tr-2xl lg:order-last lg:rounded-tl-none lg:rounded-tr-3xl lg:rounded-br-3xl "
+                    src="src/images/Quiz_avengers.png" alt="">
+                <div class="p-6 lg:m-auto lg:w-96">
+                    <h3 class="title" style="font-size:40px">Quiz Vingadores</h3>
+                    <p class="subtitle my-6" style="font-size:18px">
+                        Desenvolvido como trabalho da Faculdade em Programação Avançada, utilizando HTML semântico,
+                        Media Querie para um design responsivo, Java no Backend e GlassFish como servidor.
+                    </p>
+                    <button onclick="window.location.href='https://github.com/guilhermeSDB/Quiz-Avengers';"
+                        class="rounded-full border-2 border-black py-2 px-10 text-center hover:transition-all hover:text-white hover:bg-black duration-500 ease-in-out">View
+                        Project
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="project" class="grid my-8 lg:grid-cols-2 lg:h-96">
+                <div class="p-6 lg:m-auto lg:w-96">
+                    <h3 class="title" style="font-size:40px">Groundwork</h3>
+                    <p class="subtitle my-6" style="font-size:18px">
+                        Projeto criado com base de um Wireframe, feito com TailwindCSS.
+                    </p>
+                    <button onclick="window.location.href='https://guilhermesdb.github.io/Groundwork/index.html';"
+                        class="rounded-full border-2 border-black py-2 px-10 text-center hover:transition-all hover:text-white hover:bg-black duration-500 ease-in-out">View
+                        Project
+                    </button>
+                </div>
+                <img class="h-full object-cover object-left-top order-first rounded-tl-2xl rounded-tr-2xl lg:order-last lg:rounded-tl-none lg:rounded-tr-3xl lg:rounded-br-3xl"
+                    src="src/images/Groundwork.png" alt="">
+            </div>
+        </section>
+
+        <footer id="contact" class="w-full my-30">
+            <div class="w-52 mx-auto flex justify-between">
+                <a href="https://www.instagram.com/guilherme.dgrego/" target="_blank"><img
+                        src="src/images/ph_instagram-logo-fill.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/guilhermesb/" target="_blank"><img src="src/images/bi_linkedin.png"
+                        alt=""></a>
+                <a href=""><img src="src/images/bi_envelope-fill.png" alt=""></a>
+
+            </div>
+            <p class="block text-center my-7 logo">Guilherme Barros 2021</p>
+        </footer>
+    </div>
+</body>
+
+</html>
