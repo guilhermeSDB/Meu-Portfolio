@@ -18,6 +18,33 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+
+          .mainCard{
+                @apply grid my-10 sm:mb-40 sm:grid-cols-2 sm:h-96 rounded-3xl overflow-hidden
+          }
+
+          .subCard{
+                @apply p-6 lg:m-auto lg:w-96 max-w-full
+          }
+
+          .cardOrderFirst{
+                @apply grid order-first sm:order-first
+          }
+
+          .cardOrderLast{
+                @apply grid order-first sm:order-last 
+          }
+
+          .imgProps{
+                @apply h-full object-cover object-center
+          }
+          
+          
+        }
+      </style>
 </head>
 
 <body>
@@ -57,7 +84,7 @@
                     e Freelancer no tempo livre.</p>
                 <div class="my-5 animate__animated animate__fadeInDown">
                     <button onclick="window.location.href='https://github.com/guilhermeSDB?tab=repositories';"
-                        class="mr-2 text-black font-semibold text-sm py-2 px-6 lg:px-10 rounded-lg border-2 border-yellow-300 hover:bg-white amarelo">Projetos</button>
+                        class="mr-2 text-black font-semibold text-sm py-2 px-6 lg:px-10 rounded-lg border-2 hover:bg-white amarelo shadow-yellow-400">Projetos</button>
                     <button onclick="window.location.href='https://www.linkedin.com/in/guilhermesb/';"
                         class="text-black font-semibold text-sm py-2 px-6 lg:px-10 rounded-lg border-2 border-black hover:text-white hover:bg-black">Linkedin</button>
                 </div>
@@ -71,14 +98,14 @@
 
 
 
-        <section class="w-full lg:px-56 ">
+        <section class="max-w-full lg:px-56 ">
             <h1 id="projects" class="title text-center mb-24 pb-6 amarelo-border text-4xl lg:text-5xl ">Projetos</h1>
 
 
-            <div id="project" class="grid my-10 lg:mb-40 lg:grid-cols-2 lg:h-96">
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">Doçura</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+            <div id="project" class="mainCard">
+                <div class="subCard">
+                    <h3 class="title">Doçura</h3>
+                    <p class="subtitle my-6 text-lg">
                         Site para vitrine de produtos de uma loja ficticia.
                     </p>
                     <button onclick="window.location.href='https://github.com/guilhermeSDB/Docura';"
@@ -86,33 +113,35 @@
                         Project
                     </button>
                 </div>
-                <img class="h-full object-cover object-center order-first rounded-tl-2xl rounded-tr-2xl lg:order-last lg:rounded-tl-none lg:rounded-tr-3xl lg:rounded-br-3xl "
-                    src="src/images/doçura.png" alt="">
+                <div class="cardOrderLast">
+                    <img class="imgProps" src="src/images/doçura.png" alt="">
+                </div>
+
             </div>
 
 
-            <div id="project" class="grid my-10 lg:my-40 lg:grid-cols-2 lg:h-96">
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">Netflix Clone</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+            <div id="project" class="mainCard">
+                <div class="subCard">
+                    <h3 class="title">Netflix Clone</h3>
+                    <p class="subtitle my-6 text-lg">
                         Clone da página inicial da Netflix desenvolvido para Testar minhas habilidades, utilizando
                         HTML semântico, além de flexbox e media queries para um design responsivo.
                     </p>
                     <button onclick="window.location.href='https://guilhermesdb.github.io/Netflix_clone/';"
-                        class=" rounded-full border-2 border-black py-2 px-10 text-center hover:transition-all hover:text-white hover:bg-black duration-500 ease-in-out">View
+                        class="rounded-full border-2 border-black py-2 px-10 text-center hover:transition-all hover:text-white hover:bg-black duration-500 ease-in-out">View
                         Project</button>
                 </div>
-                <img class="h-full object-cover object-left-top grid order-first rounded-tl-2xl rounded-tr-2xl lg:order-first lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-tr-none"
-                    src="src/images/Netflix_clone.png" alt="">
+                <div class="cardOrderFirst">
+                    <img class="imgProps" src="src/images/Netflix_clone.png" alt="">
+                </div>
+
             </div>
 
 
-            <div id="project" class="grid my-10 lg:my-40 lg:grid-cols-2 lg:h-96">
-                <img class="h-full object-cover object-left-top order-first lg:order-last rounded-tl-2xl rounded-tr-2xl lg:order-last lg:rounded-tl-none lg:rounded-tr-3xl lg:rounded-br-3xl "
-                    src="src/images/Quiz_avengers.png" alt="">
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">Quiz Vingadores</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+            <div id="project" class="mainCard">
+                <div class="subCard">
+                    <h3 class="title">Quiz Vingadores</h3>
+                    <p class="subtitle my-6 text-lg">
                         Desenvolvido como trabalho da Faculdade em Programação Avançada, utilizando HTML semântico,
                         Media Querie para um design responsivo, Java no Backend e GlassFish como servidor.
                     </p>
@@ -121,13 +150,16 @@
                         Project
                     </button>
                 </div>
+                <div class="cardOrderLast">
+                    <img class="imgProps" src="src/images/Quiz_avengers.png" alt="">
+                </div>
             </div>
 
 
-            <div id="project" class="grid my-10 lg:my-40 lg:grid-cols-2 lg:h-96">
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">Groundwork</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+            <div id="project" class="mainCard">
+                <div class="subCard">
+                    <h3 class="title">Groundwork</h3>
+                    <p class="subtitle my-6 text-lg">
                         Projeto criado com base de um Wireframe, feito com TailwindCSS.
                     </p>
                     <button onclick="window.location.href='https://guilhermesdb.github.io/Groundwork/index.html';"
@@ -135,17 +167,17 @@
                         Project
                     </button>
                 </div>
-                <img class="h-full object-cover object-left-top grid order-first rounded-tl-2xl rounded-tr-2xl lg:order-first lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-tr-none"
-                    src="src/images/Groundwork.png" alt="">
+                <div class="cardOrderFirst">
+                    <img class="imgProps" src="src/images/Groundwork.png" alt="">
+                </div>
+
             </div>
 
 
-            <div id="project" class="grid my-10 lg:my-40 lg:grid-cols-2 lg:h-96">
-                <img class="h-full object-cover object-center order-first lg:order-last rounded-tl-2xl rounded-tr-2xl lg:order-last lg:rounded-tl-none lg:rounded-tr-3xl lg:rounded-br-3xl "
-                    src="src/images/ibus.png" alt="">
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">iBus PP</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+            <div id="project" class="mainCard">
+                <div class="subCard">
+                    <h3 class="title">iBus PP</h3>
+                    <p class="subtitle my-6 text-lg">
                         Saiba os Horarios e as rotas do seu Onibus.
                     </p>
                     <button onclick="window.location.href='https://guilhermesdb.github.io/iBus---PP/';"
@@ -153,14 +185,16 @@
                         Project
                     </button>
                 </div>
+                <div class="cardOrderLast">
+                    <img class="imgProps" src="src/images/ibus.png" alt="">
+                </div>
             </div>
 
 
-            <div id="project" class="grid my-10 lg:my-40 lg:grid-cols-2 lg:h-96">
-
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">Movie APP</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+            <div id="project" class="mainCard">
+                <div class="subCard">
+                    <h3 class="title">Movie APP</h3>
+                    <p class="subtitle my-6 text-lg">
                         Aplicativo para ver nota de Filmes.
                     </p>
                     <button onclick="window.location.href='https://guilhermesdb.github.io/Movie-App/';"
@@ -168,15 +202,17 @@
                         Project
                     </button>
                 </div>
-                <img class="h-full object-cover object-left-top grid order-first rounded-tl-2xl rounded-tr-2xl lg:order-first lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-tr-none"
-                    src="src/images/Movie_app.png" alt="">
+                <div class="cardOrderFirst">
+                    <img class="imgProps" src="src/images/Movie_app.png" alt="">
+                </div>
+
             </div>
 
-            <div id="project" class="grid my-10 lg:my-40 lg:grid-cols-2 lg:h-96">
+            <div id="project" class="mainCard">
 
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">Summoner Mastery</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+                <div class="subCard">
+                    <h3 class="title">Summoner Mastery</h3>
+                    <p class="subtitle my-6">
                         Summoner-Mastery é um projeto criado por min, focado em trazer resultados de Maestria de Cada
                         invocador do Game League of Legends..
                     </p>
@@ -185,15 +221,17 @@
                         Project
                     </button>
                 </div>
-                <img class="h-full object-cover object-center order-first lg:order-last rounded-tl-2xl rounded-tr-2xl lg:order-last lg:rounded-tl-none lg:rounded-tr-3xl lg:rounded-br-3xl "
-                    src="src/images/summoner_mastery.png" alt="">
+                <div class="cardOrderLast">
+                    <img class="imgProps" src="src/images/summoner_mastery.png" alt="">
+                </div>
+
             </div>
 
-            <div id="project" class="grid my-10 lg:my-40 lg:grid-cols-2 lg:h-96">
+            <div id="project" class="mainCard">
 
-                <div class="p-6 lg:m-auto lg:w-96">
-                    <h3 class="title" style="font-size:40px">Select Donation</h3>
-                    <p class="subtitle my-6" style="font-size:18px">
+                <div class="subCard">
+                    <h3 class="title">Select Donation</h3>
+                    <p class="subtitle my-6">
                         Site para doações.
                     </p>
                     <button onclick="window.location.href='http://gegteam.com.br/';"
@@ -201,11 +239,12 @@
                         Project
                     </button>
                 </div>
-                <img class="h-full object-cover object-center grid order-first rounded-tl-2xl rounded-tr-2xl lg:order-first lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-tr-none"
-                    src="src/images/select-donation.png" alt="">
+                <div class="cardOrderFirst">
+                    <img class="imgProps" src="src/images/select-donation.png" alt="">
+                </div>
+
             </div>
         </section>
-
 
 
 

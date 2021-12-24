@@ -16,11 +16,13 @@ ul li {
   font-style: normal;
   font-weight: bold;
   line-height: 120%;
+  font-size: 2.5rem;
 }
 
 .subtitle {
   font-family: "Nunito", sans-serif;
   color: #828282;
+  font-size: 1.125rem;
 }
 
 .amarelo {
@@ -34,6 +36,7 @@ ul li {
 .amarelo-txt {
   color: #fdc435;
 }
+
 
 .logo {
   font-family: "Comfortaa", cursive;
@@ -60,6 +63,7 @@ img {
 #project {
   box-shadow: 0px 6px 64px 0px #7090b01a;
   background: #ffffff;
+  /* background-color: #411111; */
 }
 
 :root {
